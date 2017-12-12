@@ -1,0 +1,69 @@
+<ion-header >
+  <ion-navbar >
+    <ion-title text-center >
+      <p id="heading">CAR PARKING</p>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page" padding >
+  <p class="in">IN <ion-icon name="arrow-dropright-circle"></ion-icon></p>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content
+        pullingIcon="arrow-dropdown"
+        pullingText="Pull to refresh"
+        refreshingSpinner="circles"
+        refreshingText="Refreshing...">
+      </ion-refresher-content>
+    </ion-refresher>
+
+<ion-list>
+    <p></p>
+    <ion-item  class="car" col-6>
+      <ion-label text-center  stacked><span class="text">Car Number </span></ion-label>
+      <ion-input  type="text"[(ngModel)]="number"></ion-input>
+    </ion-item>
+    <button ion-button class="allow" round  (click)="test(number)">ALLOW 
+    	<span class="width"><ion-icon name="car"></ion-icon></span>
+    </button>
+    	<script>
+    	document.getElementById("demo").innerHTML = new Date(time).getTime();
+    	</script>
+</ion-list>
+  <p></p>
+  <p class="in">OUT <ion-icon name="arrow-dropleft-circle"></ion-icon></p>
+  <ion-list>
+  <p></p>
+    <ion-item class="search1" col-6>
+      <ion-label text-center  stacked><span class="text">Search Car</span></ion-label>
+      <ion-input type="text" [(ngModel)]="number2"></ion-input>
+    </ion-item>
+    <button ion-button class="search" round  (click)="test2(number2)">SEARCH 
+      <span class="width"><ion-icon name="car"></ion-icon></span>
+      </button>
+      <script>
+      document.getElementById("demo").innerHTML = new Date(time).getTime();
+      </script>
+  </ion-list>
+  <p class="bill" col-6>CAR NUMBER  -- {{carno}}</p>
+  <p></p>
+  <p class="bill" col-6>TIME   --{{t}}</p><p></p>
+  <p class="bill" col-6>COST --{{c}}</p>
+  <p></p>
+  
+
+  
+  <button ion-button class="Approve" round>APPROVE</button>
+  <button ion-button class="right" round *ngIf="!paid" (click)="test2()">
+    <ion-icon name="checkmark-circle"></ion-icon>
+  </button>
+  <button ion-button class="right2" *ngIf="!paid" round  (click)="test2()">
+    <ion-icon name="close-circle"></ion-icon>
+  </button>
+  <button ion-button class="right3" round *ngIf="paid" (click)="test2()">
+    <ion-icon name="checkmark-circle"></ion-icon>
+  </button>
+  <button ion-button class="right3" round *ngIf="paid" (click)="test2()">
+    <ion-icon name="checkmark-circle"></ion-icon>
+  </button>
+</ion-content>

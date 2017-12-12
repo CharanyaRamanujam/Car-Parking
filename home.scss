@@ -1,0 +1,127 @@
+page-home {
+
+    .toolbar-background {
+      background-color: #424242;
+
+    }
+
+    #heading
+    {
+        color:white;
+    }
+
+  .card-background-page {
+    background: #136a8a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      text-align: center;
+      
+
+     
+
+      .car{
+        
+        background: transparent ;
+        width:200px;
+
+      }  
+      .search1
+      {
+        background: transparent;
+        width: 200px;
+      }
+
+    .in{
+     
+      width:60px;
+      display:left;
+      background-color: default ;
+      font-family: "Arimo";
+      font-weight: bolder;
+      color: #CFD8DC; 
+    }
+    
+    
+    .card-title {
+      position: absolute;
+      top: 36%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+
+    }
+
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      top: 52%;
+      width: 100%;
+      color: #fff;
+      font-weight: bold;
+    }
+
+  }
+
+  .allow
+  {
+     background-color:#F44336;
+     font-family: "Arimo";
+     min-height: 5px;
+     font-size: 90%;
+     line-height: 90%;
+     margin-left: 60%;
+
+     }
+
+
+  }
+  .search
+  {
+    background-color: #F44336;
+    font-family: "Arimo";
+    min-height: 5px;
+    font-size: 90%;
+    line-height: 90%;
+    margin-left: 60%;
+
+
+  
+
+  }
+  .right
+  {
+    background-color: #4CAF50 ;
+  }
+  .right2
+  {
+    background-color: #D50000;
+  }
+  .right3
+  {
+    background-color: #4CAF50; 
+  }
+  .text
+  {
+    color:white;
+    font-weight: bold;
+    font-size: 14px;
+
+  }
+  .bill
+  {
+    
+    color: white;
+    font-weight: bold;
+   
+  }
+
+  .width
+  {
+    
+    margin-left: 4px;
+  }
+
+
+
